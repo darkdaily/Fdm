@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_no_claimhouse"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_house"
+        android:layout_marginBottom="@dimen/dp15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您公司还没有发房子呢"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/textgray"/>
+
+</LinearLayout>

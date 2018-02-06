@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="FlowViewHorizontal">
+        <attr name="h_bg_radius" format="dimension" />
+        <attr name="h_pro_radius" format="dimension" />
+        <attr name="h_bg_width" format="dimension" />
+        <attr name="h_bg_color" format="color" />
+        <attr name="h_pro_width" format="dimension" />
+        <attr name="h_pro_color" format="color" />
+        <attr name="h_text_padding" format="dimension" />
+        <attr name="h_time_padding" format="dimension" />
+        <attr name="h_max_step" format="integer" />
+        <attr name="h_textsize" format="dimension" />
+        <attr name="h_pro_step" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgressView">
+        <attr name="draw_gray_bg" format="boolean" />
+        <attr name="draw_center_pic"  format="boolean"/>
+        <attr name="clock_wise"  format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="StartBar">
+        <attr name="can_start" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollLayout">
+
+        <attr name="minOffset" format="dimension" />
+
+        <attr name="maxOffset" format="dimension" />
+
+        <attr name="exitOffset" format="dimension" />
+
+        <attr name="mode">
+            <flag name="open" value="0x0" />
+            <flag name="close" value="0x1" />
+            <flag name="exit" value="0x2" />
+        </attr>
+
+        <attr name="allowHorizontalScroll" format="boolean"/>
+
+        <attr name="isSupportExit" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="BidirectionalSeekBar">
+        <attr name="pb_within_color" format="color" />
+        <attr name="pb_without_color" format="color" />
+        <attr name="pb_height" format="dimension" />
+        <attr name="ball_left_solid_color" format="color" />
+        <attr name="ball_right_solid_color" format="color" />
+        <attr name="ball_left_stroke_color" format="color" />
+        <attr name="ball_right_stroke_color" format="color" />
+        <attr name="ball_radius_size" format="dimension" />
+        <attr name="ball_stroke_size" format="dimension" />
+        <attr name="text_left_num" format="integer"/>
+        <attr name="text_right_num" format="integer"/>
+        <attr name="text_min_unit" format="integer"/>
+        <attr name="text_units" format="string"/>
+        <attr name="ball_left_drawable" format="reference"/>
+        <attr name="ball_right_drawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MessageBubble">
+        <attr name="radius" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="number" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton" tools:ignore="ResourceName">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswThumbRangeRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextThumbInset" format="dimension"/>
+        <attr name="kswTextExtra" format="dimension"/>
+        <attr name="kswTextAdjust" format="dimension"/>
+    </declare-styleable>
+</resources>

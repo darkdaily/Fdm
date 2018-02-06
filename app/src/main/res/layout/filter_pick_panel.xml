@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:visibility="gone"
+        android:text="房源类型"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="酒店式公寓"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+        <CheckBox
+            android:text="小区式公寓"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:text="出租方式"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_rentcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_zhengzu"
+            android:text="整租"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_hezu"
+            android:text="合租"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:text="居室"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_one"
+            android:text="1居室"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_two"
+            android:text="2居室"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+        <CheckBox
+            android:id="@+id/cb_three"
+            android:text="2居室"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_room_two"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_four"
+            android:text="4居室"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_five"
+            android:text="更多居室"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:text="特色配置"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="WIFI"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+        <CheckBox
+            android:text="电视"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+        <CheckBox
+            android:text="微波炉"
+            style="@style/filter_panel_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:text="微波炉"
+        style="@style/filter_panel_checkbox"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="155dp"
+            android:layout_height="36dp"
+            android:text="重置"
+            android:layout_marginLeft="5dp"
+            android:background="#ff725c"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_green"
+            android:layout_alignParentEnd="true"
+            android:layout_width="155dp"
+            android:layout_height="36dp"
+            android:text="确定"
+            android:layout_marginRight="5dp"
+            android:background="#4dad01"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="221dp"
+            android:visibility="gone">
+
+            <CheckBox
+                style="@style/filter_panel_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="独立阳台" />
+
+            <CheckBox
+                style="@style/filter_panel_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="卫生间" />
+
+            <CheckBox
+                style="@style/filter_panel_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="空调" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

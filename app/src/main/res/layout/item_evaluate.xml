@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dp13"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/user_sit"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:textSize="14sp"
+            android:textColor="@color/toolbartitle"
+            android:layout_marginTop="@dimen/dp17"
+            android:text="王代伟"
+            android:layout_toRightOf="@id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_user_tel"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/textgray"
+            android:layout_toRightOf="@id/user_icon"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_publish_time"
+            android:layout_marginRight="@dimen/dp13"
+            android:text="08月15日"
+            android:textSize="11sp"
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="#aaa"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <com.example.admin.fdm.ui.view.StartBar
+            android:id="@+id/startbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/dp13"
+            android:layout_below="@id/tv_publish_time"
+            android:layout_marginTop="8dp"
+            android:layout_width="100dp"
+            android:layout_height="13dp" />
+
+    </RelativeLayout>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_below="@id/user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp15"
+        android:id="@+id/tv_evaluate_content"
+        android:text="房子很大，也很安静，回去跟朋友商量准备签约，非常满意卧室超级大，很干净，回去跟朋友商量准备签约。"
+        style="@style/gray_text_12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/fl_pic"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_below="@id/user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp19"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp16"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_good"
+            android:src="@drawable/userful"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+        <TextView
+            android:visibility="gone"
+            android:textColor="#ccc"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="赞"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:textColor="#ccc"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="("
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_useful_count"
+            android:textColor="#ccc"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:textColor="#ccc"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=")"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_list" />
+</LinearLayout>

@@ -1,0 +1,564 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.admin.fdm.ui.activity.HouseDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.admin.fdm.ui.view.EmptyView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        </com.example.admin.fdm.ui.view.EmptyView>
+
+        <LinearLayout
+            android:id="@+id/ll_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical"
+                        tools:context="com.example.admin.fdm.ui.activity.HouseDetailActivity">
+
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/dp18"
+                            android:paddingTop="@dimen/dp15">
+
+                            <TextView
+                                android:id="@+id/tv_house_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="朝阳区-魔方公寓A户型"
+                                android:textColor="@color/toolbartitle"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv_house_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:text="1室1厅1卫-30.0m²"
+                                android:textColor="#2A2E32"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp14">
+
+                                <TextView
+                                    android:id="@+id/tv_house_rent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2000~5000"
+                                    android:textColor="@color/price_red"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="元／月"
+                                    android:textColor="@color/price_red"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="end|center_vertical"
+                                    android:paddingRight="@dimen/dp18"
+                                    android:text="月租"
+                                    android:textColor="@color/gray666"
+                                    android:textSize="11sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_tag_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_house_location"
+                                android:layout_marginBottom="@dimen/dp10"
+                                android:layout_marginTop="@dimen/dp14"
+                                android:background="@color/white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/house_tag_red"
+                                    android:paddingBottom="@dimen/dp3"
+                                    android:paddingLeft="@dimen/dp6"
+                                    android:paddingRight="@dimen/dp6"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="三天退房"
+                                    android:textColor="#f7513e"
+                                    android:textSize="9dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/house_tag_green"
+                                    android:paddingBottom="@dimen/dp3"
+                                    android:paddingLeft="@dimen/dp6"
+                                    android:paddingRight="@dimen/dp6"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="免押金"
+                                    android:textColor="#33be85"
+                                    android:textSize="9dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/house_tag_blue"
+                                    android:paddingBottom="@dimen/dp3"
+                                    android:paddingLeft="@dimen/dp6"
+                                    android:paddingRight="@dimen/dp6"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="独家房源"
+                                    android:textColor="#59abfd"
+                                    android:textSize="9dp"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider_list" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="20dp"
+                                android:text="其他费用：" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="服务费" />
+
+                            <TextView
+                                android:id="@+id/service_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="10%" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="、中介费" />
+
+                            <TextView
+                                android:id="@+id/middle_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="1" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/activity_bg" />
+
+                        <TextView
+                            style="@style/gray_text_17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="25dp"
+                            android:text="@string/good_service" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="18dp">
+
+                                <ImageView
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/zhenshifangyuan" />
+
+                                <TextView
+                                    style="@style/gray_text_12sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="真实房源" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/renzhengfangdong" />
+
+                                <TextView
+                                    style="@style/gray_text_12sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="认证房东" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="18dp">
+
+                                <ImageView
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/zhifubaozhang" />
+
+                                <TextView
+                                    style="@style/gray_text_12sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="支付保证" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/activity_bg" />
+
+                        <TextView
+                            style="@style/gray_text_17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="25dp"
+                            android:text="房源信息" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/dp17">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="18dp">
+
+                                <TextView
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="编号:" />
+
+                                <TextView
+                                    android:id="@+id/tv_house_code"
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="93944400000A" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="户型:" />
+
+                                <TextView
+                                    android:id="@+id/tv_house_type"
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="1室1厅1卫" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/dp25">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="面积:" />
+
+                                <TextView
+                                    android:id="@+id/tv_space_area"
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="30.m²" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="楼层:" />
+
+                                <TextView
+                                    android:id="@+id/tv_floor"
+                                    style="@style/gray_text_13sp_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="5/23层" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/activity_bg" />
+
+                        <TextView
+                            style="@style/gray_text_17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/dp18"
+                            android:paddingTop="@dimen/dp25"
+                            android:text="@string/house_configuration" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white">
+
+                            <include layout="@layout/action_room_configure" />
+
+                            <include layout="@layout/action_house_configure" />
+
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/activity_bg" />
+
+                        <TextView
+                            style="@style/gray_text_17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="@dimen/dp15"
+                            android:paddingLeft="@dimen/dp18"
+                            android:paddingTop="@dimen/dp25"
+                            android:text="地理位置" />
+
+                        <TextView
+                            android:id="@+id/tv_house_address"
+                            style="@style/gray_text_11sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:drawableLeft="@drawable/location"
+                            android:paddingLeft="18dp"
+                            android:text=" 北京-朝阳区-塔链坡，西二旗北路南侧" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white">
+
+                            <com.baidu.mapapi.map.MapView
+                                android:id="@+id/mapView"
+                                android:layout_width="match_parent"
+                                android:layout_height="155dp"
+                                android:layout_margin="18dp"
+                                android:background="@color/white" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/activity_bg" />
+
+                        <TextView
+                            style="@style/gray_text_17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="25dp"
+                            android:text="房源介绍" />
+
+                        <TextView
+                            android:id="@+id/tv_house_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="@dimen/dp15"
+                            android:paddingLeft="18dp"
+                            android:text="东向东向" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/activity_bg" />
+                    </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/detail_function_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_weight="6"
+                        android:background="@drawable/green_button_bg"
+                        android:gravity="center"
+                        android:text="@string/cancel_room"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:id="@+id/tv_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp50"
+                            android:gravity="center"
+                            android:text="@string/forward"
+                            android:textColor="@drawable/text_green"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/forward" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

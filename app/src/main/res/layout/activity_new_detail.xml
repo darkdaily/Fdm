@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+    android:id="@+id/rl_bar"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="#fff">
+
+        <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/return_gray" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textSize="@dimen/sp16"
+        />
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/share" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/new_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:lines="2"
+                android:paddingTop="@dimen/dp15"
+                android:paddingBottom="@dimen/dp15"
+                android:text="标题内容"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="@dimen/sp17"
+                android:textColor="@color/toolbartitle"/>
+
+            <ImageView
+                android:id="@+id/new_image"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@id/new_title"
+                android:layout_centerInParent="true"
+                android:src="@drawable/about_logo" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

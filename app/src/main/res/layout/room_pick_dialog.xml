@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="422dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        >
+
+        <View
+            android:id="@+id/translate"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#00000000"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:paddingLeft="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_price"
+                android:text="¥ 5000"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/price_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_room_id"
+                android:layout_below="@id/tv_price"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:textColor="#666e70"
+                android:text="房源编号：BJ120910203"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_room_pay_mode"
+                android:layout_below="@id/tv_room_id"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/toolbartitle"
+                android:text="已选: 押一付一，101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_margin="13dp"
+                android:id="@+id/iv_close"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_below="@id/translate"
+            android:id="@+id/iv_room"
+            android:layout_marginTop="-20dp"
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/holo_red_light"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:padding="14dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/divider_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#666e70"
+            android:text="选择付款方式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/fl_pay_way"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#666e70"
+            android:text="选择房间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/fl_room_num"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:background="@color/lightgreen"
+        android:textColor="@color/white"
+        android:text="确定"
+        android:textSize="15sp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>

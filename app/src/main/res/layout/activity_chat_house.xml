@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f6f6f7"
+        android:clipChildren="false"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_marginLeft="@dimen/dp18"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_gray"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_jizhongshi"
+                style="@style/home_rb"
+                android:background="@drawable/select_home_radio_left"
+                android:button="@null"
+                android:checked="true"
+                android:text="集中式"
+                android:textColor="@drawable/home_rg_text" />
+
+            <RadioButton
+                android:id="@+id/rb_fensanshi"
+                style="@style/home_rb"
+                android:background="@drawable/select_home_radio_right"
+                android:button="@null"
+                android:text="分散式"
+                android:textColor="@drawable/home_rg_text" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/home_find"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.admin.fdm.ui.view.EmptyView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        </com.example.admin.fdm.ui.view.EmptyView>
+
+        <include layout="@layout/action_recyclerview" />
+    </FrameLayout>
+
+</LinearLayout>

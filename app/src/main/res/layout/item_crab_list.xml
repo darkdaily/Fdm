@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:background="@color/activity_bg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:padding="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:background="@drawable/user_sit"
+            android:id="@+id/iv_user_icon"
+            android:layout_width="36dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:text="崔始源"
+            android:layout_alignTop="@+id/iv_user_icon"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/toolbartitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_user_tel"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/textgray"
+            android:text="123****1233"
+            android:layout_alignBottom="@+id/iv_user_icon"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_crab_date"
+            android:textSize="@dimen/sp12"
+            android:text="2017-09-20"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/action_qiuzu_intent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_crab_order"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/green_solid_bg"
+            android:textColor="@color/white"
+            android:text="立即抢单"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textSize="@dimen/sp12"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_toLeftOf="@id/tv_crab_order"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/shanchu"
+            android:textColor="@color/gray666"
+            android:text=" 删除"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/sp12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>

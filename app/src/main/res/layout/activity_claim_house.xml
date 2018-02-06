@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.admin.fdm.ui.activity.ClaimHouseActivity">
+
+    <LinearLayout
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f6f6f7"
+        android:clipChildren="false"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp18"
+            android:src="@drawable/return_gray" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_jizhongshi"
+                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:background="@drawable/select_home_radio_left"
+                android:button="@null"
+                android:checked="true"
+                android:text="集中式"
+                android:textSize="10sp"
+                android:textColor="@drawable/home_rg_text"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/rb_fensanshi"
+                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:background="@drawable/select_home_radio_right"
+                android:button="@null"
+                android:text="分散式"
+                android:textColor="@drawable/home_rg_text" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/home_find"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sreach2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_region"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_region"
+                style="@style/gray_text_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域  " />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/choose_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                style="@style/gray_text_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租金  " />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/choose_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                style="@style/gray_text_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排序  " />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/choose_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                style="@style/gray_text_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="筛选  " />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/choose_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.admin.fdm.ui.view.EmptyView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        </com.example.admin.fdm.ui.view.EmptyView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_choice"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/iv_ultiselect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/duoxuan"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:id="@+id/check_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:button="@drawable/checkbox_style"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_ultiselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/ultiselect"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                app:srlEnableLoadmore="true"
+                app:srlEnableRefresh="false">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_check_all_button"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp18"
+                    android:text="已选"
+                    android:textColor="@color/textgray"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/house_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/textgray"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="套房源，"
+                    android:textColor="@color/textgray"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包含"
+                    android:textColor="@color/textgray"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/room_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/textgray"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个房间"
+                    android:textColor="@color/textgray"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/green_button_bg"
+                android:gravity="center"
+                android:text="@string/confir_claim"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

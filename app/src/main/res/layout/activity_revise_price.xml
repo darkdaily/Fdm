@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.admin.fdm.ui.activity.RevisePriceActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginRight="@dimen/dp16"
+            android:src="@drawable/user_sit" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:text="王代伟"
+            android:textColor="#2A2E32"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv_user_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_name"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:text="139******90"
+            android:textColor="@color/gray666"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/contact_user"
+            android:layout_width="74dp"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/dp9"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/green_border_bg"
+            android:gravity="center"
+            android:text="@string/contact_user"
+            android:textColor="@color/lightgreen"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_list" />
+
+    <include layout="@layout/item_recommend_house_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/activity_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="@string/original_price"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp14" />
+
+            <View
+                android:id="@+id/middle_one"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/divider_list" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@id/middle_one"
+                android:gravity="center_vertical"
+                android:text="@string/revise_price"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp14" />
+
+            <ImageButton
+                android:id="@+id/question_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp14"
+                android:background="@color/white"
+                android:src="@drawable/alterprice" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="租金:"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_rent_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_toRightOf="@id/tv_rent"
+                android:gravity="center_vertical"
+                android:text="3000"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp4"
+                android:layout_toRightOf="@id/tv_rent_number"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/divider_list" />
+
+
+            <EditText
+                android:id="@+id/et_rent_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@+id/yuan_ong"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="请输入修改的租金"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp12"
+                android:singleLine="true"
+                android:digits="1234567890"
+                android:maxLength="10"/>
+
+            <TextView
+                android:id="@+id/yuan_ong"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="押金:"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_deposit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_toRightOf="@id/tv_deposit"
+                android:gravity="center_vertical"
+                android:text="3000"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp4"
+                android:layout_toRightOf="@id/tv_deposit_number"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/divider_list" />
+
+
+            <EditText
+                android:id="@+id/et_deposit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@+id/yuan_two"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="请输入修改的押金"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp12"
+                android:imeOptions="actionSend"
+                android:singleLine="true"
+                android:digits="1234567890"
+                android:maxLength="10"/>
+
+            <TextView
+                android:id="@+id/yuan_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_agency_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="中介费:"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_agency_fee_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp4"
+                android:layout_toRightOf="@id/tv_agency_fee"
+                android:gravity="center_vertical"
+                android:text="3000"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp4"
+                android:layout_toRightOf="@id/tv_agency_fee_number"
+                android:gravity="center_vertical"
+                android:text="月"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/divider_list" />
+
+
+            <EditText
+                android:id="@+id/et_agency_fee_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@+id/yuan_three"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="请输入修改的中介费率"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp12"
+                android:singleLine="true"
+                android:digits="1234567890."
+                android:maxLength="10"/>
+
+            <TextView
+                android:id="@+id/yuan_three"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_service_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="服务费:"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_service_charge_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp4"
+                android:layout_toRightOf="@id/tv_service_charge"
+                android:gravity="center_vertical"
+                android:text="10"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_toEndOf="@+id/tv_service_charge_number"
+                android:gravity="center_vertical"
+                android:text="% "
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:id="@+id/middle_two"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/divider_list" />
+
+
+            <EditText
+                android:id="@+id/et_service_charge_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@+id/yuan_four"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="请输入修改的服务费率"
+                android:textColor="@color/toolbartitle"
+                android:textSize="@dimen/sp12"
+                android:singleLine="true"
+                android:digits="1234567890."
+                android:maxLength="10"/>
+
+            <TextView
+                android:id="@+id/yuan_four"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:gravity="center_vertical"
+                android:text="% "
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/sp13" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_list" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_black"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/black_border_bg"
+                android:gravity="center"
+                android:text="@string/price_detail"
+                android:textColor="@color/toolbartitle" />
+
+            <TextView
+                android:id="@+id/tv_green"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_border_bg"
+                android:gravity="center"
+                android:text="@string/confir_revise"
+                android:textColor="@color/lightgreen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

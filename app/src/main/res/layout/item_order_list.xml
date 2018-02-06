@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:background="@color/activity_bg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:padding="13dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:background="@drawable/user_sit"
+            android:id="@+id/iv_user_icon"
+            android:layout_width="36dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:text="崔始源  "
+            android:layout_alignTop="@+id/iv_user_icon"
+            style="@style/gray_text_13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            style="@style/gray_text_13sp"
+            android:id="@+id/tv_user_tel"
+            android:text="123****1233"
+            android:layout_alignBottom="@+id/iv_user_icon"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:textSize="12sp"
+            android:text="用户待支付"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_order_house_gray" />
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:textSize="14sp"
+            android:textColor="@color/price_red"
+            android:text="¥18400"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="应收款 :  "
+            android:textColor="@color/toolbartitle"
+            android:layout_toLeftOf="@id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp12"/>
+    </RelativeLayout>
+
+
+    <View
+        android:background="@color/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_black"
+            android:text="@string/delete"
+            android:background="@drawable/black_border_bg"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:textSize="14sp"
+            android:textColor="@color/toolbartitle"
+            android:layout_marginRight="@dimen/dp10"
+            />
+
+        <TextView
+            android:id="@+id/tv_green"
+            android:textSize="14sp"
+            android:textColor="@color/green"
+            android:text="@string/revise_price"
+            android:background="@drawable/green_border_bg"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="26dp" />
+    </LinearLayout>
+</LinearLayout>

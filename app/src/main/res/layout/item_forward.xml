@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/select_checkbox"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:button="@drawable/checkbox_style"
+        android:layout_centerVertical="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:layout_toRightOf="@+id/select_checkbox"
+        android:id="@+id/iv_user_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/user_sit"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_user_icon"
+        android:id="@+id/tv_user_name"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/toolbartitle"
+        android:text="崔胜杰"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/tv_user_name"
+        android:id="@+id/tv_user_state"
+        android:layout_marginLeft="10dp"
+        android:text="已租房"
+        android:visibility="visible"
+        android:padding="3dp"
+        android:background="@drawable/house_tag_green"
+        android:textColor="#59abfd"
+        android:textSize="9sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_user_icon"
+        android:layout_below="@+id/tv_user_name"
+        android:id="@+id/tv_user_tel"
+        android:text="130*****000"
+        android:textSize="@dimen/sp12"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

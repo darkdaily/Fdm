@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    >
+
+    <include layout="@layout/action_bar" />
+
+    <View
+        android:id="@+id/viewp"
+        android:background="@color/activity_bg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="推送开关"
+            android:layout_marginLeft="@dimen/dp13"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/toolbartitle"
+            />
+
+        <CheckBox
+            android:id="@+id/check_button"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:checked="true"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/button_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight="13dp"
+
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+            <TextView
+                android:id="@+id/tv_exit"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:background="@drawable/green_button_bg"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

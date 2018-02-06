@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="187dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="¥0"
+            android:textColor="#b6b6b6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="- "
+            android:textColor="#b6b6b6" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="¥9000"
+            android:textColor="#b6b6b6" />
+    </LinearLayout>
+
+    <com.example.admin.fdm.ui.view.BidirectionalSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:ball_left_solid_color="@android:color/white"
+        app:ball_left_stroke_color="@android:color/black"
+        app:ball_radius_size="8dp"
+        app:ball_right_solid_color="@android:color/white"
+        app:ball_right_stroke_color="@android:color/black"
+        app:ball_stroke_size="1dp"
+        app:pb_height="3dp"
+        app:pb_within_color="@color/lightgreen"
+        app:pb_without_color="@color/gray666"
+        app:text_left_num="0"
+        app:text_min_unit="1"
+        app:text_right_num="9000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp10"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="155dp"
+            android:layout_height="36dp"
+            android:layout_margin="5dp"
+            android:background="#ff725c"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="155dp"
+            android:layout_height="36dp"
+            android:layout_margin="5dp"
+            android:background="#4dad01"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

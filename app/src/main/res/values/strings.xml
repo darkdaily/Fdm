@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Fdm</string>
+
+    <string name="name">扎根网大秘</string>
+    <string name="version">V2.0</string>
+    <string name="about">关于我们</string>
+    <string name="company_introduction">公司介绍</string>
+    <string name="zhage_website">扎根官网</string>
+    <string name="zhage_weixin">扎根微信</string>
+    <string name="customer_service">扎根客服</string>
+    <string name="hotline">合作热线</string>
+    <string name="weixin_name">扎根北京</string>
+    <string name="weixin_web">www.zhagan.com</string>
+    <string name="zhage_phone">010-57795011</string>
+    <string name="hotline_phone">010-57795012</string>
+    <string name="system_message">系统消息</string>
+    <string name="company_name">公司名称</string>
+    <string name="phone">手机号</string>
+    <string name="trading_area">商圈</string>
+    <string name="select_trading_area">选择商圈</string>
+    <string name="confirm">确认</string>
+    <string name="selected">已选</string>
+    <string name="hello">您好</string>
+    <string name="welcome_login">欢迎登录房大秘</string>
+    <string name="input_company_code">请输入公司代码</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_captcha">请输入图片验证码</string>
+    <string name="input_sms">请输入短信验证码</string>
+    <string name="get_sms">获取短信验证码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_new_password_two">请再输入新密码</string>
+    <string name="specification">6-16位需含有数字及字母，不可输入特殊字符</string>
+    <string name="next_step">下一步</string>
+    <string name="confirm_change">确认更改</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="forget_password_t">忘记密码!</string>
+    <string name="login">登录</string>
+    <string name="agreement_l">点击登录，既表示已阅读并同意</string>
+    <string name="agreement_r">《扎根登录协议》</string>
+
+    <string name="receive_coupons">领取优惠券</string>
+    <string name="my_coupons">我的优惠券</string>
+
+
+    <string name="claim_room">认领房间</string>
+    <string name="claim_housing_resources">认领房源</string>
+    <string name="choice_claim_room">选择认领房间</string>
+    <string name="cancel_claim_room">取消认领房间</string>
+    <string name="cancel_room">取消房间</string>
+    <string name="cancel_housing_resources">取消房源认领</string>
+    <string name="confir_claim">确认认领</string>
+    <string name="confir_cancel">确认取消</string>
+    <string name="check_all">全选</string>
+    <string name="search">   搜索</string>
+    <string name="forward">转发</string>
+    <string name="house_detail">房源详情</string>
+    <string name="house_configuration">房源配置</string>
+    <string name="room_configuration">房间配置</string>
+    <string name="public_configuration">公共配置</string>
+    <string name="good_service">好服务</string>
+    <string name="rent">租金</string>
+    <string name="deposit">押金</string>
+    <string name="company">元/月</string>
+    <string name="wifi">wifi</string>
+    <string name="heater">热水器</string>
+    <string name="desk">书桌</string>
+    <string name="washer">洗衣机</string>
+    <string name="refrigerator">冰箱</string>
+    <string name="balcony">阳台</string>
+    <string name="microwave_oven">微波炉</string>
+    <string name="gas_furnace">燃气灶</string>
+    <string name="cooker_hood">油烟机</string>
+    <string name="electromagnetic_oven">电磁炉</string>
+    <string name="bed">床</string>
+    <string name="sofa">沙发</string>
+    <string name="air_conditioner">空调</string>
+    <string name="wardrobe">衣柜</string>
+    <string name="television">电视</string>
+    <string name="toilet">卫生间</string>
+    <string name="revise_price">修改价格</string>
+    <string name="delete">删除</string>
+    <string name="view_evaluation">查看评价</string>
+    <string name="wait_pay">用户待支付</string>
+    <string name="cancel_pay">用户取消支付</string>
+    <string name="complete_pay">用户完成支付</string>
+
+    <string name="user_wait_confir">用户待确认</string>
+    <string name="fangdami_wait_confir">大秘待确认</string>
+    <string name="bespeaking">预约中</string>
+    <string name="already_completed">已完成</string>
+    <string name="already_cancel">已取消</string>
+    <string name="bespeak_user">预约用户</string>
+
+
+
+
+    <string name="see_information">查看信息</string>
+    <string name="takelook_information">带看信息</string>
+    <string name="user_name">名字</string>
+    <string name="order_detail">订单详情</string>
+    <string name="takelook_detail">带看详情</string>
+    <string name="contact_user">联系用户</string>
+    <string name="three_check_out">三天退房</string>
+    <string name="free">免押金</string>
+    <string name="solo">独家房源</string>
+    <string name="price_detail">价格明细</string>
+    <string name="confir_revise">确认修改</string>
+    <string name="original_price">原价格</string>
+    <string name="broker_service">经纪人的服务</string>
+    <string name="house_evaluation">房源评价</string>
+    <string name="company_impressions">经纪公司印象</string>
+    <string name="user_evaluation">用户评价</string>
+    <string name="see_evaluation">查看评价</string>
+
+    <string name="ultiselect">多选</string>
+
+    <string name="contacts">联系人</string>
+    <string name="contacts_tel">联系人电话</string>
+    <string name="takelook_time">期望带看时间</string>
+    <string name="bespeak">提交预约</string>
+
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+</resources>

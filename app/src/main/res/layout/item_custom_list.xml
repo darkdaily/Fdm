@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_user_icon"
+        android:background="@drawable/user_sit"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/toolbartitle"
+        android:text="崔胜杰"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_user_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_user_state"
+        app:layout_constraintLeft_toRightOf="@id/tv_user_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_user_name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_user_name"
+        android:layout_marginLeft="10dp"
+        android:text="已租房"
+        android:visibility="gone"
+        android:padding="3dp"
+        android:background="@drawable/house_tag_green"
+        android:textColor="#59abfd"
+        android:textSize="9sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_user_tel"
+        android:text="130*****000"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/sp12"
+        android:textColor="@color/textgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_take_look"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_icon"
+        android:background="@drawable/daikan1"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <ImageView
+        android:id="@+id/iv_talk"
+        app:layout_constraintRight_toLeftOf="@id/iv_take_look"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_icon"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/liaotian"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+
+    <View
+        android:id="@+id/v_divider"
+        android:background="@color/divider_color"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_icon"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/gray_text_12sp"
+        android:text="2017-10-12"
+        app:layout_constraintTop_toBottomOf="@id/v_divider"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/tv_detail"
+        android:drawableLeft="@drawable/xiangqing"
+        style="@style/gray_text_12sp"
+        android:textColor="@color/text_green"
+        android:text="  详情 "
+        app:layout_constraintTop_toTopOf="@id/tv_time"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:text="  删除"
+        app:layout_constraintTop_toTopOf="@id/tv_time"
+        app:layout_constraintRight_toLeftOf="@id/tv_detail"
+        android:layout_marginRight="10dp"
+        style="@style/gray_text_12sp"
+        android:drawableLeft="@drawable/shanchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

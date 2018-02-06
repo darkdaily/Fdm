@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingRight="@dimen/dp10"
+    android:paddingLeft="@dimen/dp10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/coupons_use_date"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="日期"
+        android:textColor="@color/toolbartitle"
+        android:textSize="@dimen/sp14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_list" />
+
+    <LinearLayout
+        android:id="@+id/ll_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
